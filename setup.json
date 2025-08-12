@@ -1,0 +1,28 @@
+[
+    {
+        "session": "orihime",
+        "token": "8288356202:AAGlLCvZJMXzuOb1N4dFxgd9kD9wIpypDpo",
+        "api_id": "11619403",
+        "api_hash": "b9529ed85c826521157c522f96350c8b",
+        "workers": 8,
+        "db_uri": "mongodb+srv://Orihime:Orihime@cluster0.dklzozw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        "db_name": "Orihime",
+        "fsubs": [[-1002544093138, false, 5], [-1002741496585, false, 5]],
+        "db": -1002843769030,
+        "auto_del": 600,
+        "bypass_timeout": 50,
+        "messages": {
+            "START": "<b><blockquote>›› ʜɪ ᴛʜᴇʀᴇ... {mention} ››</blockquote>\n\nɪ ᴀᴍ ᴀ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ...!\nɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ᴛʜʀᴏᴜɢʜ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ʟɪɴᴋ....!\nᴘᴏᴡᴇʀᴇᴅ ʙʏ @Cultured_Oasis</b>",
+            "FSUB": "<b></blockquote>\nʏᴏᴜʀ ғɪʟᴇ ɪs ʀᴇᴀᴅʏ ‼️ ʟᴏᴏᴋs ʟɪᴋᴇ ʏᴏᴜ ʜᴀᴠᴇɴ'ᴛ sᴜʙsᴄʀɪʙᴇᴅ ᴛᴏ ᴏᴜʀ ᴄʜᴀɴɴᴇʟs ʏᴇᴛ, sᴜʙsᴄʀɪʙᴇ ɴᴏᴡ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ғɪʟᴇs</b>",
+            "ABOUT": "<b><blockquote>1. First Join the channel\n2. Tap on Original link again or Reload ⚡️\n3. Tap on Start and Done ✅</blockquote></b>",
+            "REPLY": "<b>ʙᴀᴋᴋᴀ ! ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴍʏ ꜱᴇɴᴘᴀɪ!!</b>",
+            "SHORT_MSG": "<b>⌯ ʜᴇʀᴇ ɪꜱ ʏᴏᴜʀ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ, ᴍᴜꜱᴛ ᴡᴀᴛᴄʜ ᴛᴜᴛᴏʀɪᴀʟ ʙᴇꜰᴏʀᴇ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴅᴏᴡɴʟᴏᴀᴅ...</b>",
+            "START_PHOTO": "https://graph.org/file/a78491c53ba72169dc28b-9db0668fb5e674cdf9.jpg",
+            "FSUB_PHOTO": "https://graph.org/file/fdada2e0a2b6482e17ab7-23f0d56ce32ede2b37.jpg",
+            "SHORT_PIC": "https://graph.org/file/fdada2e0a2b6482e17ab7-23f0d56ce32ede2b37.jpg"
+        },
+        "admins": [6648688093],
+        "disable_btn": true,
+        "protect": false
+    }
+]
