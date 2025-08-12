@@ -1,13 +1,13 @@
 [
     {
-        "session": "orihime",
-        "token": "8288356202:AAGlLCvZJMXzuOb1N4dFxgd9kD9wIpypDpo",
+        "session": "zerotwo",
+        "token": "8094838192:AAETnXLI2PfuSGtGH6J0VhEoGqieKnHlpKg",
         "api_id": "11619403",
         "api_hash": "b9529ed85c826521157c522f96350c8b",
         "workers": 8,
-        "db_uri": "mongodb+srv://Orihime:Orihime@cluster0.dklzozw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
-        "db_name": "Orihime",
-        "fsubs": [[-1002544093138, false, 5], [-1002741496585, false, 5]],
+        "db_uri": "mongodb+srv://ZeroTwo:ZeroTwo@cluster0.zve5ov4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        "db_name": "ZeroTwo",
+        "fsubs": [[-1002801540265, false, 5], [-1002889643234, false, 5]],
         "db": -1002843769030,
         "auto_del": 600,
         "bypass_timeout": 50,
@@ -17,12 +17,13 @@
             "ABOUT": "<b><blockquote>1. First Join the channel\n2. Tap on Original link again or Reload ⚡️\n3. Tap on Start and Done ✅</blockquote></b>",
             "REPLY": "<b>ʙᴀᴋᴋᴀ ! ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴍʏ ꜱᴇɴᴘᴀɪ!!</b>",
             "SHORT_MSG": "<b>⌯ ʜᴇʀᴇ ɪꜱ ʏᴏᴜʀ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ, ᴍᴜꜱᴛ ᴡᴀᴛᴄʜ ᴛᴜᴛᴏʀɪᴀʟ ʙᴇꜰᴏʀᴇ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴅᴏᴡɴʟᴏᴀᴅ...</b>",
-            "START_PHOTO": "https://graph.org/file/a78491c53ba72169dc28b-9db0668fb5e674cdf9.jpg",
-            "FSUB_PHOTO": "https://graph.org/file/fdada2e0a2b6482e17ab7-23f0d56ce32ede2b37.jpg",
-            "SHORT_PIC": "https://graph.org/file/fdada2e0a2b6482e17ab7-23f0d56ce32ede2b37.jpg"
+            "START_PHOTO": "https://graph.org/file/d56428446917fe9a39ff5-d1352d10ef7356608b.jpg",
+            "FSUB_PHOTO": "https://graph.org/file/d21b7f621e1ac79d3fabb-79386c4971e1c90c88.jpg",
+            "SHORT_PIC": "https://graph.org/file/db44593691423d14c9ffd-0d2c8ce4e0eb7612ea.jpg"
         },
         "admins": [6648688093],
         "disable_btn": true,
         "protect": false
     }
 ]
+
