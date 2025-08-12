@@ -6,10 +6,16 @@ from helper.helper_func import encode
 
 #===============================================================#
 
-@Client.on_message(filters.private & ~filters.command(['start','users','broadcast','batch','genlink','usage', 'pbroadcast', 'ban', 'unban', 'authorize', 'unauthorize', 'authorized', 'request', 'profile', 'stats']))
+# CORRECTED: Added 'cleanup' to the list of excluded commands
+@Client.on_message(filters.private & ~filters.command(['start','users','broadcast','batch','genlink','usage', 'pbroadcast', 'ban', 'unban', 'authorize', 'unauthorize', 'authorized', 'request', 'profile', 'stats', 'cleanup']))
 async def channel_post(client: Client, message: Message):
     if message.from_user.id not in client.admins:
         return await message.reply(client.reply_text)
+    
+    # Ignore commands explicitly, as a safeguard
+    if message.text and message.text.startswith('/'):
+        return
+
     reply_text = await message.reply_text("Please Wait...!", quote = True)
     try:
         post_message = await message.copy(chat_id = client.db, disable_notification=True)
