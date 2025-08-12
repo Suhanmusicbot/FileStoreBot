@@ -253,7 +253,6 @@ async def my_plan(client: Client, message: Message):
         
         plan_text = f"**👤 Your Profile:**\n\n🔸 **Plan:** `Premium`\n{expiry_text}\n🔸 **Ads:** `Disabled`\n🔸 **Requests:** `Enabled`"
     else:
-        plan_text = "**👤 Your Profile:**\n\n🔸 **Plan:** `Free`\n🔸 **Ads:** `Enabled`\n🔸 **Requests:** `Disabled`\n\n🔓 Unlock Premium to get more benefits
-Contact: @MrSungChinWoo"
+        plan_text = "**👤 Your Profile:**\n\n🔸 **Plan:** `Free`\n🔸 **Ads:** `Enabled`\n🔸 **Requests:** `Disabled`\n\n🔓 Unlock Premium to get more benefits Contact: @MrSungChinWoo"
         
     await message.reply_text(plan_text)
