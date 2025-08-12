@@ -5,7 +5,6 @@ from pyrogram.errors import PeerIdInvalid, UserIsBlocked, InputUserDeactivated
 from zoneinfo import ZoneInfo
 
 from bot import Bot
-from config import OWNER_ID
 
 # Define the Indian Standard Time zone
 IST = ZoneInfo("Asia/Kolkata")
@@ -14,8 +13,8 @@ IST = ZoneInfo("Asia/Kolkata")
 
 @Client.on_message(filters.command('authorize') & filters.private)
 async def add_admin_command(client: Bot, message: Message):
-    if message.from_user.id != OWNER_ID:
-        await message.reply_text("❌ Only Owner Can Use this command.")
+    if message.from_user.id != client.owner:
+        await message.reply_text("❌ Only the Owner can use this command.")
         return
 
     if len(message.command) < 2:
@@ -104,11 +103,11 @@ async def add_admin_command(client: Bot, message: Message):
 
 @Client.on_message(filters.command('unauthorize') & filters.private)
 async def remove_admin_command(client: Bot, message: Message):
-    if message.from_user.id != OWNER_ID:
-        return await message.reply_text("Only Owner can use this command...!")
+    if message.from_user.id != client.owner:
+        return await message.reply_text("Only the Owner can use this command...!")
 
     if len(message.command) != 2:
-        return await message.reply_text("<b>You're using wrong format do like this:</b> /unauthorize <userid>")
+        return await message.reply_text("<b>You're using the wrong format. Do it like this:</b> /unauthorize <userid>")
 
     try:
         user_id_to_remove = int(message.command[1])
@@ -141,8 +140,8 @@ async def remove_admin_command(client: Bot, message: Message):
 
 @Client.on_message(filters.command('authorized') & filters.private)
 async def admin_list_command(client: Bot, message: Message):
-    if message.from_user.id != OWNER_ID:
-        return await message.reply_text("Only Owner can use this command...!")
+    if message.from_user.id != client.owner:
+        return await message.reply_text("Only the Owner can use this command...!")
 
     pro_user_docs = await client.mongodb.get_pros_list()
     
