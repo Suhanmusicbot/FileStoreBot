@@ -203,7 +203,7 @@ async def send_files_from_payload(client: Client, message: Message, base64_strin
             except Exception as e: client.LOGGER(__name__, "SEND").warning(f"Failed to send {getattr(msg, 'id', 'N/A')} to {chat_id}: {e}")
         
         if sent_messages and client.auto_del > 0:
-            del_msg_text = f'<blockquote><i><b>his File is deleting automatically in {humanize.naturaldelta(client.auto_del)}. Forward in your Saved Messages..!</b></i></blockquote>'
+            del_msg_text = f'<blockquote><i><b>This File is deleting automatically in {humanize.naturaldelta(client.auto_del)}. Forward in your Saved Messages..!</b></i></blockquote>'
             del_msg = await client.send_message(chat_id=chat_id, text=del_msg_text)
             asyncio.create_task(delete_files(sent_messages, client, del_msg, "start"))
     except Exception as e:
