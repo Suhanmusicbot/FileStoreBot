@@ -116,7 +116,7 @@ async def start_command(client: Client, message: Message):
             
             short_photo = client.messages.get("SHORT_PIC", "")
             short_caption = client.messages.get("SHORT_MSG", "Click the button below to get your file!")
-            reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("• ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ •", url=short_link)],[InlineKeyboardButton("ᴘʀᴇᴍɪᴜᴍ", url="https://t.me/Cultured_Oasis/5"), InlineKeyboardButton("ᴛᴜᴛᴏʀɪᴀʟ", url="https://t.me/+zYJNXKoRIGs5YmY1")]])
+            reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("• ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ •", url=short_link)],[InlineKeyboardButton("ᴘʀᴇᴍɪᴜᴍ", url="https://t.me/Realm_Bots"), InlineKeyboardButton("ᴛᴜᴛᴏʀɪᴀʟ", url="https://t.me/+zYJNXKoRIGs5YmY1")]])
 
             if short_photo: await message.reply_photo(photo=short_photo, caption=short_caption, reply_markup=reply_markup)
             else: await message.reply(short_caption, reply_markup=reply_markup)
@@ -253,6 +253,6 @@ async def my_plan(client: Client, message: Message):
         
         plan_text = f"**👤 Your Profile:**\n\n🔸 **Plan:** `Premium`\n{expiry_text}\n🔸 **Ads:** `Disabled`\n🔸 **Requests:** `Enabled`"
     else:
-        plan_text = "**👤 Your Profile:**\n\n🔸 **Plan:** `Free`\n🔸 **Ads:** `Enabled`\n🔸 **Requests:** `Disabled`\n\n🔓 Unlock Premium to get more benefits Contact: @MrSungChinWoo"
+        plan_text = "**👤 Your Profile:**\n\n🔸 **Plan:** `Free`\n🔸 **Ads:** `Enabled`\n🔸 **Requests:** `Disabled`\n\n🔓 Unlock Premium to get more benefits Contact: @Realm_Bots"
         
     await message.reply_text(plan_text)
