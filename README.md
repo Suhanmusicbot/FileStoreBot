@@ -1,175 +1,164 @@
-# 📁 File Store Bot
+━━━━━━━━━━━━━━━━━━━━
 
-**File Store Bot** is a lightning-fast, powerful Telegram bot designed to handle file storage, user access control, admin tools, and full customization — all through Telegram UI.
+<h2 align="center">
+    ──「 ꜱʜᴏʀᴛᴇɴᴇʀ ꜰɪʟᴇ ꜱᴛᴏʀᴇ 」──
+</h2>
 
----
+<p align="center">
+  <img src="https://files.catbox.moe/5o6qbm.jpg">
+</p>
 
-## 🚀 Features
 
-- **📦 Multi-Bot Deployment:**  
-  Deploy multiple bots from a single codebase using a shared setup file. Each bot has its own configuration — great for resellers or power users.
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=SHORTNER+SHARING+BOT!;CREATED+BY+REALM+BOTS!;A+ADVANCE+BOT+WITH+COOL+FEATURE!)
+</p>
 
-- **📨 Unlimited Force Subscription:**  
-  Add as many channels as you want for force-subscription. Supports **request-based access** — users don’t need to be added to the channel manually. Each link generated has a **timer and auto-expiry** for better control.
+ ━━━━━━━━━━━━━━━━━
 
-- **⚙️ Admin Controls:**  
-  Add or remove multiple admins **in a single command**, all from within the bot itself.
 
-- **🖼️ Start & FSUB Media:**  
-  Provide image URLs or directly send photos to customize the **Start** and **Force Subscribe** messages.
 
-- **🛡️ Protect & Auto-Delete Content:**  
-  Enable content protection or set auto-delete timers for files — all configurable from within the bot.
+<details><summary><b>📌 ғᴇᴀᴛᴜʀᴇs:</b></summary>
 
-- **💬 Fully Editable Messages:**  
-  Customize start, about, reply, and FSUB messages with formatting and placeholders (see below).
+<b>🚀 Key Features:</b>
 
-- **🚫 Ban / Unban Users:**  
-  Control access to the bot by banning or unbanning users instantly.
+• <b>Batch & Custom Batch Links:</b> Create links for one or multiple posts easily using <code>/batch</code> & <code>/custom_batch</code>  
+• <b>Link Generator:</b> Instantly generate direct links with <code>/genlink</code>  
+• <b>Broadcast Tools:</b> Send messages or media to all users using <code>/broadcast</code>, <code>/dbroadcast</code>, or <code>/pbroadcast</code>  
+• <b>Auto File Deletion:</b> Control auto-delete with <code>/dlt_time</code> & <code>/check_dlt_time</code>  
+• <b>User Management:</b> Ban/unban users and view banlist via <code>/ban</code>, <code>/unban</code>, and <code>/banlist</code>  
+• <b>Multi Force Subscription:</b> Add, delete, and manage multiple Force Sub channels with <code>/addchnl</code>, <code>/delchnl</code>, <code>/listchnl</code>  
+• <b>Admin Control:</b> Add or remove admins with <code>/add_admin</code>, <code>/deladmin</code>, and view list via <code>/admins</code>  
+• <b>Premium System:</b> Manage premium users using <code>/addpremium</code>, <code>/remove_premium</code>, <code>/premium_users</code>, <code>/myplan</code>  
+• <b>Bot Analytics:</b> Get stats and uptime via <code>/stats</code>, user info with <code>/users</code>, and database count via <code>/count</code>  
+• <b>Deployment Ready:</b> Easily deploy on <b>Heroku</b> or <b>Koyeb</b> in minutes  
+• <b>Token Verification:</b> Enable or disable optional secure access  
 
----
+<b>✨ More features & enhancements coming soon...</b>
+</details>
 
-## 🛠️ Message Placeholders
 
-### ✨ START Message
+<details><summary><b> - ᴠᴀʀɪᴀʙʟᴇs :</b></summary>
+  
+## ᴠᴀʀɪᴀʙʟᴇs
+* `API_HASH` Your API Hash from my.telegram.org
+* `APP_ID` Your API ID from my.telegram.org
+* `TG_BOT_TOKEN` Your bot token from @BotFather
+* `OWNER_ID` Must enter Your Telegram Id
+* `CHANNEL_ID` Your Channel ID eg:- -100xxxxxxxx
+* `DATABASE_URL` Your mongo db url
+* `DATABASE_NAME` Your mongo db session name
+* `ADMINS` Optional: A space separated list of user_ids of Admins, they can only create links
+* `START_MESSAGE` Optional: start message of bot, use HTML and <a href='https://github.com/codeflix-bots/filestore/blob/master/README.md#start_message'>fillings</a>
+* `PROTECT_CONTENT` Optional: True if you need to prevent files from forwarding
 
-```python
-client.messages.get('START', 'No Start Msg').format(
-    first=message.from_user.first_name,
-    last=message.from_user.last_name,
-    username=None if not message.from_user.username else '@' + message.from_user.username,
-    mention=message.from_user.mention,
-    id=message.from_user.id
-)
+### Token Variables
+
+* `SHORTLINK_URL` = Your shortner Url ( ex. "inshorturl.com")
+* `SHORTLINK_API` = Your shortner API (ex. "PUIAQBIFrydvLhIzAOeGV8yZppu")
+</details>
+
+## 𝐶𝑜𝑚𝑚𝑎𝑛𝑑𝑠
+
+```
+/start - start the bot or get posts
+/batch - create link for more than one posts
+/genlink - create link for one post
+/users - view bot statistics
+/broadcast - broadcast any messages to bot users
+/dbroadcast - broadcast any messages with auto delete.
+/stats - checking your bot uptime
+/start - start the bot or get posts  
+/batch - create link for more than one posts  
+/custom_batch - create custom batch from channel/group  
+/genlink - create link for one post  
+/users - view bot statistics  
+/broadcast - broadcast any messages to bot users  
+/dbroadcast - broadcast any messages with auto delete  
+/stats - check your bot uptime  
+/dlt_time - set auto delete time for files  
+/check_dlt_time - check current delete time setting  
+/ban - ban a user from using the bot  
+/unban - unban a previously banned user  
+/banlist - get list of banned users  
+/addchnl - add a channel for force subscription  
+/delchnl - remove a force subscribe channel  
+/listchnl - view all added force subscribe channels  
+/fsub_mode - toggle force subscribe on or off  
+/pbroadcast - pin a broadcast to all user's chat 
+/add_admin - add a new admin  
+/deladmin - remove an admin  
+/admins - list all current admins  
+/addpremium - grant premium access to a user  
+/premium_users - list all premium users  
+/remove_premium - revoke premium from a user  
+/myplan - check your premium status  
+/count - count shortner clicks  
+/delreq - removed users that left chnl and not getting request fsub
 ```
 
-📌 Supported placeholders:
-- `{first}` — user's first name  
-- `{last}` — user's last name  
-- `{username}` — `@username` or `None`  
-- `{mention}` — a clickable mention  
-- `{id}` — Telegram user ID  
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
----
+<h3>「 ᴏᴛʜᴇʀ ʙʀᴀɴᴄʜᴇs 」
+</h3>
 
-### 🧾 ABOUT Message
+- <b>[ᴛᴏᴋᴇɴ](https://github.com/Codeflix-Bots/FileStore/tree/token)  ➻  [ᴡɪᴛʜᴏᴜᴛ sʜᴏʀᴛɴᴇʀ](https://github.com/Codeflix-Bots/FileStore/tree/Master) </b>
 
-```python
-client.messages.get('ABOUT', 'No Start Message').format(
-    owner_id=client.owner,
-    bot_username=client.username,
-    first=query.from_user.first_name,
-    last=query.from_user.last_name,
-    username=None if not query.from_user.username else '@' + query.from_user.username,
-    mention=query.from_user.mention,
-    id=query.from_user.id
-)
-```
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-📌 Supported placeholders:
-- `{owner_id}` — owner’s Telegram ID  
-- `{bot_username}` — bot’s `@username`  
-- `{first}` / `{last}` / `{username}` / `{mention}` / `{id}` — same as START placeholders  
 
-❌ Force Subscribe messages **do not support** placeholders.
+<details>
+<summary><h3>
+- <b> ᴅᴇᴘʟᴏʏᴍᴇɴᴛ ᴍᴇᴛʜᴏᴅs </b>
+</h3></summary>
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
+</h3>
 
----
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Codeflix-Bots/FileStore">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy On Heroku">
+</a></p>
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ᴋᴏʏᴇʙ 」─
+</h3>
+<p align="center"><a href="https://app.koyeb.com/deploy?type=git&repository=github.com/Codeflix-Bots/FileStore&branch=master&name=master">
+  <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy On Koyeb">
+</a></p>
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʀᴀɪʟᴡᴀʏ 」─
+</h3>
+<p align="center"><a href="https://railway.app/deploy?template=https://github.com/Codeflix-Bots/FileStore">
+     <img height="45px" src="https://railway.app/button.svg">
+</a></p>
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʀᴇɴᴅᴇʀ 」─
+</h3>
+<p align="center"><a href="https://render.com/deploy?repo=https://github.com/Codeflix-Bots/FileStore">
+<img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
+</a></p>
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ᴠᴘs 」─
+</h3>
+<p>
+<pre>
+git clone https://github.com/Codeflix-Bots/FileStore
+# Install Packages
+pip3 install -U -r requirements.txt
+Edit info.py with variables as given below then run bot
+python3 bot.py
+</pre>
+</p>
+</details>
 
-## 🧑‍💻 Configuration Files
+<h3>「 ᴄʀᴇᴅɪᴛs 」
+</h3>
 
-### 📄 config.py
+- <b>[ᴄᴏᴅᴇғʟɪx ʙᴏᴛs](https://t.me/codeflix_bots)  ➻  [ᴜᴘᴅᴀᴛᴇs](https://t.me/codeflix_bots) </b>
+- <b>[ʏᴀᴛᴏ](https://github.com/sewxiy)  ➻  [sᴏᴍᴇᴛʜɪɴɢ](https://t.me/cosmic_freak) </b>
+- <b>[ʀᴏʜɪᴛ](https://github.com/rohit3607)  ➻  [sᴏᴍᴇᴛʜɪɴɢ](https://t.me/FILE_SHARINGBOTS/17) </b>
+ 
+<b>ᴀɴᴅ ᴀʟʟ [ᴛʜᴇ ᴄᴏɴᴛʀɪʙᴜᴛᴏʀs](https://telegram.me/codeflix-bots) ᴡʜᴏ ʜᴇʟᴩᴇᴅ ɪɴ ᴍᴀᴋɪɴɢ file store ʙᴏᴛ ᴜsᴇꜰᴜʟ & ᴩᴏᴡᴇʀꜰᴜʟ 🖤 </b>
 
-This file contains the global bot settings.
+## 📌  𝑵𝒐𝒕𝒆
 
-```python
-PORT = '8080'
-OWNER_ID = 6321064549
-MSG_EFFECT = 5046509860389126442
-```
+ᴊᴜꜱᴛ ꜰᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴇᴅɪᴛ ᴀꜱ ᴘᴇʀ ʏᴏᴜʀ ɴᴇᴇᴅꜱ.
 
----
-
-### 📁 setup.json
-
-A list of configurations — one for each bot you want to run.
-
-```json
-[
-    {
-        "session": "ses",  // unique session name for this bot
-        "token": "YOUR_BOT_TOKEN",
-        "api_id": "YOUR_API_ID",
-        "api_hash": "YOUR_API_HASH",
-        "workers": 8,
-
-        "db_uri": "mongodb+srv://Cluster0:your_db@cluster.mongodb.net/?retryWrites=true&w=majority",
-        "db_name": "name",
-
-        "fsubs": [[-1002074478106, true, 5]],  // [channel_id, request_enabled, link_expiry_in_minutes]
-        "db": -1002074478106,  // logs or updates group
-
-        "auto_del": 0,  // auto delete message time in seconds (0 = disabled)
-
-        "messages": {
-            "START": "<blockquote expandable>__Start message here...__</blockquote>",
-            "FSUB": "",
-            "ABOUT": "This bot is operated by {owner_id}.",
-            "REPLY": "Your reply text here.",
-            "START_PHOTO": "",  // image URL or Telegram file ID
-            "FSUB_PHOTO": ""
-        },
-
-        "admins": [78324663, 73468932],
-        "disable_btn": true,
-        "protect": false
-    }
-]
-```
-
-📝 Notes:
-- You can add **multiple bot configs** in the same `setup.json`
-- Make sure **`session` names are unique** for each entry
-- The `fsubs` list supports multiple channels
-
----
-
-## 💡 Usage Guide
-
-1. **Clone the repo**:
-
-```bash
-git clone https://github.com/ArihantSharma/FileStoreBot
-cd FileStoreBot
-bash start.sh
-```
-
-2. **Install requirements**:
-
-```bash
-pip install -r requirements.txt
-```
-
-3. **Edit your `config.py`** and `setup.json` as explained above.
-
-4. **Run the bot**:
-
-```bash
-python3 main.py
-```
-
-You’re done!
-
----
-
-## 🛒 Purchase Full Source
-
-Want to use or resell this bot?
-
-📩 **Contact [@VOATcb](https://t.me/VOATcb) on Telegram** to purchase the code or for support.
-
----
-
-## 📜 License
-
-This code is proprietary. You are not allowed to redistribute, resell, or publish it without explicit permission from the owner.
-
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
