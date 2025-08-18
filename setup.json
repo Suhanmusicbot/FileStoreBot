@@ -1,7 +1,7 @@
 [
     {
-        "session": "zerotwo",
-        "token": "8094838192:AAETnXLI2PfuSGtGH6J0VhEoGqieKnHlpKg",
+        "session": "bot",
+        "token": "", #add bot toke
         "api_id": "11619403",
         "api_hash": "b9529ed85c826521157c522f96350c8b",
         "workers": 8,
@@ -26,4 +26,5 @@
         "protect": false
     }
 ]
+
 
