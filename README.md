@@ -1,7 +1,7 @@
 ━━━━━━━━━━━━━━━━━━━━
 
 <h2 align="center">
-    ──「 ꜱʜᴏʀᴛᴇɴᴇʀ ꜰɪʟᴇ ꜱᴛᴏʀᴇ 」──
+ꜱʜᴏʀᴛᴇɴᴇʀ ꜰɪʟᴇ ꜱᴛᴏʀᴇ
 </h2>
 
 <p align="center">
@@ -143,5 +143,6 @@ python3 main.py
 ᴊᴜꜱᴛ ꜰᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴇᴅɪᴛ ᴀꜱ ᴘᴇʀ ʏᴏᴜʀ ɴᴇᴇᴅꜱ.
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 
 
