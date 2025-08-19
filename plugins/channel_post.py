@@ -44,7 +44,7 @@ async def channel_post(client: Client, message: Message):
     # --- THIS IS THE CORRECTED LINE ---
     # We removed the <code> tag and are sending the link directly.
     await reply_text.edit(
-        f"<b>Link Generated!</b>\n\nYour link is ready:\n{link}", 
+        f"<b>ʜᴇʀᴇ ɪꜱ ʏᴏᴜʀ ʟɪɴᴋ :</b>\n\n{link}", 
         reply_markup=reply_markup, 
         disable_web_page_preview=True,
         parse_mode=ParseMode.HTML
