@@ -1,30 +1,23 @@
 import asyncio
 from pyrogram import filters, Client
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.enums import ParseMode
 from pyrogram.errors import FloodWait
 from helper.helper_func import encode
 
-# --- Custom filter to prevent capturing numeric replies ---
-# This filter will return True if the message is NOT a simple number.
+# Custom filter to prevent capturing numeric replies
 async def is_not_numeric_reply(_, __, message: Message):
-    """
-    Custom filter to prevent the channel_post handler from firing on
-    numeric input intended for listeners (like setting a timer).
-    """
-    # Check if the message has text and if that text is purely numeric.
     if message.text and message.text.isdigit():
-        return False  # If it's just a number, the filter fails.
-    return True       # Otherwise, the filter passes.
+        return False
+    return True
 
-# We must create a filter object from our asynchronous function
 not_numeric_filter = filters.create(is_not_numeric_reply)
-# --- END OF NEW CODE ---
 
 
 @Client.on_message(
     filters.private &
     ~filters.command(['start','users','broadcast','batch','genlink','usage', 'pbroadcast', 'ban', 'unban']) &
-    not_numeric_filter  # Apply the new, smarter filter here
+    not_numeric_filter
 )
 async def channel_post(client: Client, message: Message):
     if message.from_user.id not in client.admins:
@@ -48,7 +41,15 @@ async def channel_post(client: Client, message: Message):
 
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔁 Share URL", url=f'https://telegram.me/share/url?url={link}')]])
 
-    await reply_text.edit(f"<b>Here is your link</b>\n\n<code>{link}</code>", reply_markup=reply_markup, disable_web_page_preview = True)
+    # --- THIS IS THE CORRECTED LINE ---
+    # We removed the <code> tag and are sending the link directly.
+    await reply_text.edit(
+        f"<b>Link Generated!</b>\n\nYour link is ready:\n{link}", 
+        reply_markup=reply_markup, 
+        disable_web_page_preview=True,
+        parse_mode=ParseMode.HTML
+    )
+    # --- END OF CORRECTION ---
 
     if not client.disable_btn:
         await post_message.edit_reply_markup(reply_markup)
