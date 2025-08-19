@@ -1,175 +1,132 @@
-# 📁 File Store Bot
+━━━━━━━━━━━━━━━━━━━━
 
-**File Store Bot** is a lightning-fast, powerful Telegram bot designed to handle file storage, user access control, admin tools, and full customization — all through Telegram UI.
+<h2 align="center">
+ᴜʟᴛɪᴍᴀᴛᴇ ꜰɪʟᴇ ꜱᴛᴏʀᴇ
+</h2>
 
----
+<p align="center">
+  <img src="https://files.catbox.moe/5o6qbm.jpg">
+</p>
 
-## 🚀 Features
 
-- **📦 Multi-Bot Deployment:**  
-  Deploy multiple bots from a single codebase using a shared setup file. Each bot has its own configuration — great for resellers or power users.
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=ULTIMATE+FILESTORE+BOT!;CREATED+BY+REALM+BOTS!;A+ADVANCE+BOT+WITH+COOL+FEATURE!)
+</p>
 
-- **📨 Unlimited Force Subscription:**  
-  Add as many channels as you want for force-subscription. Supports **request-based access** — users don’t need to be added to the channel manually. Each link generated has a **timer and auto-expiry** for better control.
+ ━━━━━━━━━━━━━━━━━
 
-- **⚙️ Admin Controls:**  
-  Add or remove multiple admins **in a single command**, all from within the bot itself.
 
-- **🖼️ Start & FSUB Media:**  
-  Provide image URLs or directly send photos to customize the **Start** and **Force Subscribe** messages.
 
-- **🛡️ Protect & Auto-Delete Content:**  
-  Enable content protection or set auto-delete timers for files — all configurable from within the bot.
+<details><summary><b>📌 ғᴇᴀᴛᴜʀᴇs:</b></summary>
 
-- **💬 Fully Editable Messages:**  
-  Customize start, about, reply, and FSUB messages with formatting and placeholders (see below).
+<b>🚀 Key Features:</b>
 
-- **🚫 Ban / Unban Users:**  
-  Control access to the bot by banning or unbanning users instantly.
+• <b>Batch & Custom Batch Links:</b> Create links for one or multiple posts easily using <code>/batch</code>    
+• <b>Broadcast Tools:</b> Send messages or media to all users using <code>/broadcast</code> or <code>/pbroadcast</code>  
+• <b>Auto File Deletion:</b> Control auto-delete  
+• <b>User Management:</b> Ban/unban users and view banlist via <code>/ban</code>, <code>/unban</code>, and <code>/banlist</code>  
+• <b>Multi Force Subscription:</b> Add, delete, and manage multiple Force Sub channels from <code>Setting Menu</code>
+• <b>Admin Control:</b> Add or remove admins from <code>Setting Menu</code> 
+• <b>Bot Analytics:</b> Get user info with <code>/users</code> 
+• <b>Deployment Ready:</b> Easily deploy on <b>Heroku</b> or <b>Koyeb</b> in minutes  
 
----
+<b>✨ More features & enhancements coming soon...</b>
+</details>
 
-## 🛠️ Message Placeholders
 
-### ✨ START Message
+<details><summary><b> - ᴠᴀʀɪᴀʙʟᴇs :</b></summary>
+  
+## ᴠᴀʀɪᴀʙʟᴇs
+* `API_HASH` Your API Hash from my.telegram.org
+* `APP_ID` Your API ID from my.telegram.org
+* `TOKEN` Your bot token from @BotFather
+* `OWNER_ID` Must enter Your Telegram Id
+* `CHANNEL_ID` Your Channel ID eg:- -100xxxxxxxx
+* `DB_URI` Your mongo db url
+* `DB_NAME` Your mongo db session name
+* `ADMINS` Optional: A space separated list of user_ids of Admins, they can only create links
+* `START` Optional: start message of bot, use HTML 
+* `PROTECT` Optional: True if you need to prevent files from forwarding
+  
 
-```python
-client.messages.get('START', 'No Start Msg').format(
-    first=message.from_user.first_name,
-    last=message.from_user.last_name,
-    username=None if not message.from_user.username else '@' + message.from_user.username,
-    mention=message.from_user.mention,
-    id=message.from_user.id
-)
+## 𝐶𝑜𝑚𝑚𝑎𝑛𝑑𝑠
+
+```
+start - Start the bot
+batch - Create batch link
+broadcast - Broadcast a message 
+pbroadcast - Pin a Broadcast message 
+users - See the total users 
+ban - Ban a user
+unban - Unban a users
+
+*Everything else you can change from Settings Menu*
 ```
 
-📌 Supported placeholders:
-- `{first}` — user's first name  
-- `{last}` — user's last name  
-- `{username}` — `@username` or `None`  
-- `{mention}` — a clickable mention  
-- `{id}` — Telegram user ID  
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
----
+<h3>「 ᴏᴛʜᴇʀ ʙʀᴀɴᴄʜᴇs 」
+</h3>
 
-### 🧾 ABOUT Message
+- <b>Normal FileStore Branch Coming Soon</b>
 
-```python
-client.messages.get('ABOUT', 'No Start Message').format(
-    owner_id=client.owner,
-    bot_username=client.username,
-    first=query.from_user.first_name,
-    last=query.from_user.last_name,
-    username=None if not query.from_user.username else '@' + query.from_user.username,
-    mention=query.from_user.mention,
-    id=query.from_user.id
-)
-```
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-📌 Supported placeholders:
-- `{owner_id}` — owner’s Telegram ID  
-- `{bot_username}` — bot’s `@username`  
-- `{first}` / `{last}` / `{username}` / `{mention}` / `{id}` — same as START placeholders  
 
-❌ Force Subscribe messages **do not support** placeholders.
+<details>
+<summary><h3>
+- <b> ᴅᴇᴘʟᴏʏᴍᴇɴᴛ ᴍᴇᴛʜᴏᴅs </b>
+</h3></summary>
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
+</h3>
 
----
-
-## 🧑‍💻 Configuration Files
-
-### 📄 config.py
-
-This file contains the global bot settings.
-
-```python
-PORT = '8080'
-OWNER_ID = 6321064549
-MSG_EFFECT = 5046509860389126442
-```
-
----
-
-### 📁 setup.json
-
-A list of configurations — one for each bot you want to run.
-
-```json
-[
-    {
-        "session": "ses",  // unique session name for this bot
-        "token": "YOUR_BOT_TOKEN",
-        "api_id": "YOUR_API_ID",
-        "api_hash": "YOUR_API_HASH",
-        "workers": 8,
-
-        "db_uri": "mongodb+srv://Cluster0:your_db@cluster.mongodb.net/?retryWrites=true&w=majority",
-        "db_name": "name",
-
-        "fsubs": [[-1002074478106, true, 5]],  // [channel_id, request_enabled, link_expiry_in_minutes]
-        "db": -1002074478106,  // logs or updates group
-
-        "auto_del": 0,  // auto delete message time in seconds (0 = disabled)
-
-        "messages": {
-            "START": "<blockquote expandable>__Start message here...__</blockquote>",
-            "FSUB": "",
-            "ABOUT": "This bot is operated by {owner_id}.",
-            "REPLY": "Your reply text here.",
-            "START_PHOTO": "",  // image URL or Telegram file ID
-            "FSUB_PHOTO": ""
-        },
-
-        "admins": [78324663, 73468932],
-        "disable_btn": true,
-        "protect": false
-    }
-]
-```
-
-📝 Notes:
-- You can add **multiple bot configs** in the same `setup.json`
-- Make sure **`session` names are unique** for each entry
-- The `fsubs` list supports multiple channels
-
----
-
-## 💡 Usage Guide
-
-1. **Clone the repo**:
-
-```bash
-git clone https://github.com/ArihantSharma/FileStoreBot
-cd FileStoreBot
-bash start.sh
-```
-
-2. **Install requirements**:
-
-```bash
-pip install -r requirements.txt
-```
-
-3. **Edit your `config.py`** and `setup.json` as explained above.
-
-4. **Run the bot**:
-
-```bash
+<p align="center"><a href="https://heroku.com/deploy?">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy On Heroku">
+</a></p>
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ᴋᴏʏᴇʙ 」─
+</h3>
+<p align="center"><a href="https://app.koyeb.com/deploy?">
+  <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy On Koyeb">
+</a></p>
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʀᴀɪʟᴡᴀʏ 」─
+</h3>
+<p align="center"><a href="https://railway.app/deploy?">
+     <img height="45px" src="https://railway.app/button.svg">
+</a></p>
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʀᴇɴᴅᴇʀ 」─
+</h3>
+<p align="center"><a href="https://render.com/deploy?">
+<img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
+</a></p>
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ᴠᴘs 」─
+</h3>
+<p>
+<pre>
+git clone https://github.com/TypeAbdullah/FileStoreBot
+# Install Packages
+pip3 install -U -r requirements.txt
+# Start the Bot
 python3 main.py
-```
+</pre>
+</p>
+</details>
 
-You’re done!
+<h3>「 ᴄʀᴇᴅɪᴛs 」
+</h3>
 
----
+- <b>[ʀᴇᴀʟᴍ ʙᴏᴛs](https://t.me/realm_bots)  ➻  [ᴜᴘᴅᴀᴛᴇs](https://t.me/realm_bots) </b>
+- <b>[ɴᴀᴘᴀᴇxᴛʀᴀ](https://github.com/NaapaExtra)  ➻  [sᴏᴍᴇᴛʜɪɴɢ](https://t.me/realm_bots) </b>
+ 
+<b>ᴀɴᴅ ᴀʟʟ [ᴛʜᴇ ᴄᴏɴᴛʀɪʙᴜᴛᴏʀs](https://telegram.me/realm_bots) ᴡʜᴏ ʜᴇʟᴩᴇᴅ ɪɴ ᴍᴀᴋɪɴɢ file store ʙᴏᴛ ᴜsᴇꜰᴜʟ & ᴩᴏᴡᴇʀꜰᴜʟ 🖤 </b>
 
-## 🛒 Purchase Full Source
+## 📌  𝑵𝒐𝒕𝒆
 
-Want to use or resell this bot?
+ᴊᴜꜱᴛ ꜰᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴇᴅɪᴛ ᴀꜱ ᴘᴇʀ ʏᴏᴜʀ ɴᴇᴇᴅꜱ.
 
-📩 **Contact [@VOATcb](https://t.me/VOATcb) on Telegram** to purchase the code or for support.
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
----
-
-## 📜 License
-
-This code is proprietary. You are not allowed to redistribute, resell, or publish it without explicit permission from the owner.
 
