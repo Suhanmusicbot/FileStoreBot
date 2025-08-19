@@ -46,7 +46,7 @@
 * `ADMINS` Optional: A space separated list of user_ids of Admins, they can only create links
 * `START` Optional: start message of bot, use HTML 
 * `PROTECT` Optional: True if you need to prevent files from forwarding
-  
+</details>
 
 ## 𝐶𝑜𝑚𝑚𝑎𝑛𝑑𝑠
 
@@ -67,7 +67,7 @@ unban - Unban a users
 <h3>「 ᴏᴛʜᴇʀ ʙʀᴀɴᴄʜᴇs 」
 </h3>
 
-- <b>[ᴛᴏᴋᴇɴ](https://github.com/TypeAbdullah/FileStoreBot/tree/shortner)
+- <b>[sʜᴏʀᴛɴᴇʀ](https://github.com/TypeAbdullah/FileStoreBot/tree/shortner)
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
@@ -128,6 +128,7 @@ python3 main.py
 ᴊᴜꜱᴛ ꜰᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴇᴅɪᴛ ᴀꜱ ᴘᴇʀ ʏᴏᴜʀ ɴᴇᴇᴅꜱ.
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 
 
 
