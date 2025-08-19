@@ -81,4 +81,5 @@ async def link_generator(client: Client, message: Message):
         reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
-    # --- END OF CORRECTION ---
+    # @Realm_Bots
+
