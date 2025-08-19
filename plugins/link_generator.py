@@ -47,7 +47,7 @@ async def batch(client: Client, message: Message):
     
     # --- THIS IS THE CORRECTED LINE ---
     await second_message.reply_text(
-        f"<b>Generated Batch Link:</b>\n\n{link}", 
+        f"<b>ʜᴇʀᴇ ɪꜱ ʏᴏᴜʀ ʟɪɴᴋ :</b>\n\n{link}", 
         quote=True, 
         reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
@@ -82,4 +82,5 @@ async def link_generator(client: Client, message: Message):
         parse_mode=ParseMode.HTML
     )
     # @Realm_Bots
+
 
