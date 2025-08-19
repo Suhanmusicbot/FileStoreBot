@@ -1,25 +1,26 @@
 [
     {
-        "session": "ses",
-        "token": "8062951959:AAFBrRM7bUNmX59AVKdW7-WNl07lg39I6TI",
-        "api_id": "23539392",
-        "api_hash": "5ee767ace3c694a4fb39cdd2cc78eaca",
+        "session": "realmbots",
+        "token": "",
+        "api_id": "",
+        "api_hash": "",
         "workers": 8,
-        "db_uri": "mongodb+srv://Albedo:Albedo@cluster0.kpmf9wb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
-        "db_name": "Albedo",
-        "fsubs": [[-1002807818930, false, 5]],
-        "db": -1002843769030,
+        "db_uri": "",
+        "db_name": "",
+        "fsubs": [[-10, false, 5]],
+        "db": -100,
         "auto_del": 0,
         "messages": {
-            "START": "<b><blockquote>›› ʜɪ ᴛʜᴇʀᴇ... {mention} ››</blockquote>\n\nɪ ᴀᴍ ᴀ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ...!\nɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ᴛʜʀᴏᴜɢʜ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ʟɪɴᴋ....!\nᴘᴏᴡᴇʀᴇᴅ ʙʏ @Cultured_Oasis</b>",
-            "FSUB": "<b><blockquote>›› ʜᴇʏ {first} ››</blockquote>\nʏᴏᴜʀ ғɪʟᴇ ɪs ʀᴇᴀᴅʏ ‼️ ʟᴏᴏᴋs ʟɪᴋᴇ ʏᴏᴜ ʜᴀᴠᴇɴ'ᴛ sᴜʙsᴄʀɪʙᴇᴅ ᴛᴏ ᴏᴜʀ ᴄʜᴀɴɴᴇʟs ʏᴇᴛ, sᴜʙsᴄʀɪʙᴇ ɴᴏᴡ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ғɪʟᴇs</b>",
+            "START": "<b><blockquote>›› ʜɪ ᴛʜᴇʀᴇ... {mention} ››</blockquote>\n\nɪ ᴀᴍ ᴀ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ...!\nɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ᴛʜʀᴏᴜɢʜ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ʟɪɴᴋ....!\nᴘᴏᴡᴇʀᴇᴅ ʙʏ @Realm_Bots</b>",
+            "FSUB": "<b>ʏᴏᴜʀ ғɪʟᴇ ɪs ʀᴇᴀᴅʏ ‼️ ʟᴏᴏᴋs ʟɪᴋᴇ ʏᴏᴜ ʜᴀᴠᴇɴ'ᴛ sᴜʙsᴄʀɪʙᴇᴅ ᴛᴏ ᴏᴜʀ ᴄʜᴀɴɴᴇʟs ʏᴇᴛ, sᴜʙsᴄʀɪʙᴇ ɴᴏᴡ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ғɪʟᴇs</b>",
             "ABOUT": "<b><blockquote>1. First Join the channel\n2. Tap on Original link again or Reload ⚡️\n3. Tap on Start and Done ✅</blockquote></b>",
             "REPLY": "reply_text",
-            "START_PHOTO": "https://graph.org/file/c2b0ebd49a3bb6b3494ce-092e515c702a1285aa.jpg",
-            "FSUB_PHOTO": "https://graph.org/file/7b2c3cef76da1e9e77ae7-87eafb4a911f8beb08.jpg"
+            "START_PHOTO": "",
+            "FSUB_PHOTO": ""
         },
         "admins": [6648688093],
         "disable_btn": true,
         "protect": false
     }
 ]
+
