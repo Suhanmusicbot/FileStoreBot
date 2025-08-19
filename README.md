@@ -67,7 +67,7 @@ unban - Unban a users
 <h3>「 ᴏᴛʜᴇʀ ʙʀᴀɴᴄʜᴇs 」
 </h3>
 
-- <b>Normal FileStore Branch Coming Soon</b>
+- <b>[ᴛᴏᴋᴇɴ](https://github.com/TypeAbdullah/FileStoreBot/tree/shortner)
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
@@ -128,5 +128,6 @@ python3 main.py
 ᴊᴜꜱᴛ ꜰᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴇᴅɪᴛ ᴀꜱ ᴘᴇʀ ʏᴏᴜʀ ɴᴇᴇᴅꜱ.
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 
 
