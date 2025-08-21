@@ -1,4 +1,4 @@
-#(©)AnimeYugen
+# Made by @NaapaExtra for @Realm_Bots 
 
 from aiohttp import web
 from plugins import web_server
